@@ -1,5 +1,5 @@
 variable "backend_name" {
-  description = "Identifier for the backend/"
+  description = "Identifier for the backend"
   type        = "string"
 }
 
@@ -58,11 +58,13 @@ variable "ssl_sni_hostname" {
 
 variable "ssl_ca_cert" {
   description = "SSL CA certificate in PEM format to validate the backend cert against"
+  type        = "string"
   default     = ""
 }
 
 variable "ssl_check_cert" {
   description = "Whether to validate the backend SSL cert - must be \"always\" - the default and recommended value, or \"never\", which should be considered a security risk"
+  type        = "string"
   default     = "always"
 }
 
