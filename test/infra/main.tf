@@ -1,4 +1,3 @@
-
 # defaults
 
 variable "defaults_backend_name" {}
